@@ -6,5 +6,5 @@ COPY package*.json /app/frontend/
 
 COPY . /app/frontend/
 RUN npm install
-
+RUN npm install typescript @types/react @types/react-dom --save-dev
 CMD ["npm", "start"]
